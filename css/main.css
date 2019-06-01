@@ -1,3 +1,7 @@
+body {
+  color: #444242;
+}
+
 ul {
   position: relative;
   padding-left: 2rem;
@@ -16,6 +20,16 @@ ul::after {
 
 li {
   list-style: none;
+}
+
+.linea_titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  background: linear-gradient(to right, #e73827 0%, #f02f17 29%, #f6290c 49%, #f16f5c 71%, #f85032 100%);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .estacion {
