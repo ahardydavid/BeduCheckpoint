@@ -1,3 +1,7 @@
+body{
+    color: $text-color-primary;
+}
+
 ul{
     position: relative;
     padding-left: 2rem;
@@ -16,6 +20,17 @@ ul{
 
 li{
     list-style: none;
+}
+
+.linea_titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    // background: red;
+    background: linear-gradient(to right, rgba(231,56,39,1) 0%, rgba(240,47,23,1) 29%, rgba(246,41,12,1) 49%, rgba(241,111,92,1) 71%, rgba(248,80,50,1) 100%);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
 }
 
 .estacion{
@@ -46,7 +61,7 @@ li{
         grid-area: c;
         display: block;
         margin: 0;
-        color: gray;
+        color: $text-color-secondary;
     }
     &::before{
         grid-area: d;
