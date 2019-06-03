@@ -5,6 +5,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+        <!--Menus responsivos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./styles/local.css">
@@ -12,40 +18,26 @@
 </head>
 <body>
     <!-- Main -->
-  <main>
-        <div class="grid-container">
-
-                <div class="grid-item">
-                        <div class="card" style="width: 18rem;">
-                                  <div class="card-body">
-                                  <h2 class="card-title">Linea 1</h2>
-                                  <p class="card-text">Mapa de la linea 1.</p>
-                                  <a href="l1.html" class="btn btn-primary" target="ventana">Consultar aquí.</a>
-                                </div>
-                              </div>
-                </div>
-                <div class="grid-item">
-                        <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                <h2 class="card-title">Linea 2</h2>
-                                <p class="card-text">Mapa de la linea 2.</p>
-                                <a href="l2.html" class="btn btn-primary" target="ventana">Consultar aquí.</a>
-                              </div>
-                            </div>
-                </div>
-                <div class="grid-item"></div>
-                <div class="grid-item">
-                        <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                <h2 class="card-title">Linea 3</h2>
-                                <p class="card-text">Mapa de la linea 3.</p>
-                                <a href="l3.html" class="btn btn-primary" target="ventana">Consultar aquí.</a>
-                              </div>
-                            </div>
-                </div>
-                <div class="grid-item"></div>
-              </div>
-    </main>
+    <div class="container">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Informacion de Líneas
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Seleccione una opción</li>
+            <li><a href="l1.html" target="ventana">Linea 1</a></li>
+            <li><a href="l2.html" target="ventana">Linea 2</a></li>
+            <li><a href="l3.html" target="ventana">Linea 3</a></li>
+            <!-- <li class="divider"></li>
+            <li class="dropdown-header">Dropdown header 2</li>
+            <li><a href="#">About Us</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <h1>Tren Ligero de Guadalajara</h1>
+    <div class="grid-container">
+            <div class="grid-item" style="text-align: left;">
+             <h4>Bienvenidos a la pagina de informacion de SITEUR. Nos comprometemos al servicio!</h4>   
+            </div>
       <!-- /Main -->
 </body>
 </html>
