@@ -60,8 +60,7 @@ li {
   position: relative;
 }
 #carousel .carousel-inner img {
-  min-height: 30vh;
-  max-height: 55vh;
+  height: 55vh;
   object-fit: cover;
   filter: grayscale(70%);
 }
@@ -288,9 +287,9 @@ li {
   background-color: #B2AEB7;
   border-color: #B2AEB7;
 }
-.card a:hover {
-  background: #d25f5f;
-  border-color: #d25f5f;
+.card a:hover, .card a:active {
+  background: #d25f5f !important;
+  border-color: #d25f5f !important;
 }
 
 /*# sourceMappingURL=main.css.map */
