@@ -9,177 +9,290 @@
     <title>Tren Ligero Linea 3</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Estaci%C3%B3n_Central_de_Autobuses_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Central_de_Autobuses_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Central de Autobuses">
-                <h1 class="estacion_titulo">Central de Autobuses</h1>
-                <p class="estacion_descripcion"> Dirección	Av. de las Torres
-                    Municipio	Tlaquepaque
-                    Zona	Límites municipales de Tlaquepaque y Tonalá</p> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/SITEUR_T_logo.png" alt="logo"> SITEUR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="l1.html">Línea 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="l2.html">Línea 2</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Línea 3<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Estaci%C3%B3n_L%C3%A1zaro_C%C3%A1rdenas_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_L%C3%A1zaro_C%C3%A1rdenas_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Lázaro Cárdenas">
-                <h1 class="estacion_titulo">Lázaro Cárdenas</h1>
-                <p class="estacion_descripcion">Dirección	Avenida Francisco Silva Romero y calle República de Guatemala
-                    Barrio	Lomas de Tlaquepaque
-                    Municipio	Tlaquepaque
-                    Zona	Nodo Revolución</p> 
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="container-fluid">
+            <div class="hero container">
+                <div class="row">
+                    <div class="col hero_info">
+                            <div class="hero_logo l3">TL3</div>
+                            <h1 class="hero_title">Tren Ligero: Línea 3</h1>
+                      </div>                    
+                </div>
             </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Estaci%C3%B3n_Tlaquepaque_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Tlaquepaque_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Tlaquepaque Centro">
-                <h1 class="estacion_titulo">Tlaquepaque Centro</h1>
-                <p class="estacion_descripcion">Dirección	Av. Francisco Silva Romero, entre Zaragoza y 16 de Septiembre
-                    Barrio	Los Meseros
-                    Municipio	Tlaquepaque
-                    Localidad	San Pedro Tlaquepaque</p> 
+        </section>
+        <!-- /Hero -->
+
+        <!-- Informacion y mapa -->
+        <section id="info" class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 px-4 px-md-5 pt-4">
+                    <div class="row">
+                        <div class="info">
+                            <h2>Estado de línea:</h2>
+                            <div class="alert alert-danger role="alert">
+                                    Inactivo - En construccion
+                            </div>
+                            <h2>Horarios y paradas</h2>
+                            <p>
+                                    La línea TL-3 de tren tendra 18 paradas desde la central de autobuses hasta arcos de zapopan.
+                                    Aun no existen horarios de operacion para la TL-3. Se estima que su operación sera los días hábiles de 5:00 a 23:00.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="estaciones">
+                            <h2 class="estaciones_title">Estaciones</h2>
+                            <!-- Lista de estaciones -->
+                            <ul>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Estaci%C3%B3n_Central_de_Autobuses_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Central_de_Autobuses_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Central de Autobuses">
+                                        <h1 class="estacion_titulo">Central de Autobuses</h1>
+                                        <p class="estacion_descripcion"> Dirección	Av. de las Torres
+                                            Municipio	Tlaquepaque
+                                            Zona	Límites municipales de Tlaquepaque y Tonalá</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Estaci%C3%B3n_L%C3%A1zaro_C%C3%A1rdenas_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_L%C3%A1zaro_C%C3%A1rdenas_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Lázaro Cárdenas">
+                                        <h1 class="estacion_titulo">Lázaro Cárdenas</h1>
+                                        <p class="estacion_descripcion">Dirección	Avenida Francisco Silva Romero y calle República de Guatemala
+                                            Barrio	Lomas de Tlaquepaque
+                                            Municipio	Tlaquepaque
+                                            Zona	Nodo Revolución</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Estaci%C3%B3n_Tlaquepaque_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Tlaquepaque_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Tlaquepaque Centro">
+                                        <h1 class="estacion_titulo">Tlaquepaque Centro</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. Francisco Silva Romero, entre Zaragoza y 16 de Septiembre
+                                            Barrio	Los Meseros
+                                            Municipio	Tlaquepaque
+                                            Localidad	San Pedro Tlaquepaque</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Estaci%C3%B3n_R%C3%ADo_Nilo_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_R%C3%ADo_Nilo_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Río Nilo">
+                                        <h1 class="estacion_titulo">Río Nilo</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. Revolución esq. Av. Río Nilo
+                                            Sector	Reforma
+                                            Barrio	Jardines de la Paz
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Estaci%C3%B3n_Revoluci%C3%B3n_L3_%282%29.jpg/300px-Estaci%C3%B3n_Revoluci%C3%B3n_L3_%282%29.jpg" alt="Plaza Revolución">
+                                        <h1 class="estacion_titulo">Plaza Revolución</h1>
+                                        <p class="estacion_descripcion">Dirección	Avenida Revolución, calle Ramón López Velarde
+                                            Sector	Reforma
+                                            Barrio	Lomas del Paradero
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Estaci%C3%B3n_CUCEI_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_CUCEI_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="CUCEI">
+                                        <h1 class="estacion_titulo">CUCEI</h1>
+                                        <p class="estacion_descripcion"> Dirección	Av. Revolución y calle Manuel de Mimbela
+                                            Sector	Reforma
+                                            Barrio	Colonia Olímpica
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/L3GDL07.jpg/300px-L3GDL07.jpg" alt="Plaza de la Bandera">
+                                        <h1 class="estacion_titulo">Plaza de la Bandera</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. Revolución, entre Calzada del Ejército y calle Constancia
+                                            Sector	Reforma
+                                            Barrio	Colonia Obrera
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/L3GDL08.jpg/300px-L3GDL08.jpg" alt="Independencia">
+                                        <h1 class="estacion_titulo">Independencia</h1>
+                                        <p class="estacion_descripcion">Dirección	Calzada Independencia Sur, Avenida Revolución y Avenida Ramón Corona
+                                            Sector	Juárez y Reforma
+                                            Barrio	Analco
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/L3GDL09.jpg/300px-L3GDL09.jpg" alt="Guadalajara Centro">
+                                        <h1 class="estacion_titulo">Guadalajara Centro</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. 16 de Septiembre y Av. Juárez
+                                            Municipio	Guadalajara
+                                            Zona	Centro Histórico</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/L3GDL10_20170122_1234.jpg/300px-L3GDL10_20170122_1234.jpg" alt="Santuario">
+                                        <h1 class="estacion_titulo">Santuario</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. Fray Antonio Alcalde, calles Juan Álvarez y Manuel Acuña
+                                            Sector	Hidalgo
+                                            Barrio	Santuario, Centro Barranquitas
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/L3GDL11_20170122_1218.jpg/300px-L3GDL11_20170122_1218.jpg" alt="La Normal CETRAM">
+                                        <h1 class="estacion_titulo">La Normal CETRAM</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. de Los Maestros y Alcalde
+                                            Sector	Hidalgo
+                                            Barrio	La Normal, Miraflores
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Estaci%C3%B3n_%C3%81vila_Camacho_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/200px-Estaci%C3%B3n_%C3%81vila_Camacho_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Ávila Camacho">
+                                        <h1 class="estacion_titulo">Ávila Camacho</h1>
+                                        <p class="estacion_descripcion">Dirección	Federalismo y Ávila Camacho
+                                            Sector	Hidalgo
+                                            Barrio	San Miguel De Mezquitán
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Estaci%C3%B3n_Circunvalaci%C3%B3n_Country_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Circunvalaci%C3%B3n_Country_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Circunvalación Country">
+                                        <h1 class="estacion_titulo">Circunvalación Country</h1>
+                                        <p class="estacion_descripcion">Dirección	Ávila Camacho esq. Mar Egeo y calle A-1
+                                            Sector	Hidalgo
+                                            Barrio	Jardines del Country
+                                            Municipio	Guadalajara</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Estaci%C3%B3n_Plaza_Patria_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Plaza_Patria_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Plaza Patria">
+                                        <h1 class="estacion_titulo">Plaza Patria</h1>
+                                        <p class="estacion_descripcion">Dirección	Ávila Camacho y Patria Norte
+                                            Sector	Hidalgo
+                                            Barrio	Country Club
+                                            Municipio	Guadalajara
+                                            Zona	Límites municipales de Guadalajara y Zapopan</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Estaci%C3%B3n_Zapopan_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Zapopan_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Zapopan Centro">
+                                        <h1 class="estacion_titulo">Zapopan Centro</h1>
+                                        <p class="estacion_descripcion">Ubicación
+                                            Dirección	Av. Juan Pablo II de Zapopan y Avenida Hidalgo
+                                            Municipio	Zapopan
+                                            Zona	Centro Histórico de la ciudad conurbada de Zapopan, Jalisco</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Estaci%C3%B3n_Mercado_del_Mar_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Mercado_del_Mar_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Mercado del Mar">
+                                        <h1 class="estacion_titulo">Mercado del Mar</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. Juan Pablo II de Zapopan al cruce por Cabecera Municipal López Cotilla y Av. José Parres Arias
+                                            Barrio	Colonia El Vigía
+                                            Municipio	Zapopan</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Estaci%C3%B3n_Perif%C3%A9rico_Belenes_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Perif%C3%A9rico_Belenes_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Periférico Belenes">
+                                        <h1 class="estacion_titulo">Periférico Belenes</h1>
+                                        <p class="estacion_descripcion">Dirección	Juan Pablo II y Periférico Norponiente
+                                            Barrio	Unidad FOVISSSTE, Belenes Norte
+                                            Municipio	Zapopan</p> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="estacion">
+                                        <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Estaci%C3%B3n_Arcos_de_Zapopan_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Arcos_de_Zapopan_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Arcos de Zapopan">
+                                        <h1 class="estacion_titulo">Arcos de Zapopan</h1>
+                                        <p class="estacion_descripcion">Dirección	Av. Juan Gil Preciado esq. Av. Arco del Triunfo
+                                            Barrio	Col. Arcos de Zapopan
+                                            Municipio	Zapopan</p> 
+                                    </div>
+                                </li>
+                            </ul>                                                     
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-12 col-md-5 px-4 px-md-5 pt-4">
+                    <div class="row">
+                        <div class="mapa">
+                            <h2 class="mapa_title">Mapa de la línea 3 de tren ligero</h2>
+                            <img class="mapa_img" src="img/linea3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="horario">
+                            <h2 class="horario_titulo">Horarios de línea 3</h2>
+                            <p class="horario_descripcion">
+                                La línea 3 de tren ligero actualmente no se encuentra en operacion.
+                            </p>
+                            <p class="horario_dia">Lunes <span>00:00 - 00:00</span></p>
+                            <p class="horario_dia">Martes <span>00:00 - 00:00</span></p>
+                            <p class="horario_dia">Miercoles <span>00:00 - 00:00</span></p>
+                            <p class="horario_dia">Jueves <span>00:00 - 00:00</span></p>
+                            <p class="horario_dia">Viernes <span>00:00 - 00:00</span></p>
+                            <p class="horario_dia">Sábado <span>00:00 - 00:00</span></p>
+                            <p class="horario_dia">Domingo <span>00:00 - 00:00</span></p>
+                        </div>
+                    </div>                    
+                </div>
             </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Estaci%C3%B3n_R%C3%ADo_Nilo_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_R%C3%ADo_Nilo_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Río Nilo">
-                <h1 class="estacion_titulo">Río Nilo</h1>
-                <p class="estacion_descripcion">Dirección	Av. Revolución esq. Av. Río Nilo
-                    Sector	Reforma
-                    Barrio	Jardines de la Paz
-                    Municipio	Guadalajara</p> 
+        </section>
+        <!-- /Informacion y mapa -->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container-fluid bg-dark text-center">
+                <div class="row pb-4 pt-4 mt-4">
+                    <div class="col-12">
+                        <p>Made with <3 by David x2 y Toño</p>
+                    </div>
+                </div>
             </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Estaci%C3%B3n_Revoluci%C3%B3n_L3_%282%29.jpg/300px-Estaci%C3%B3n_Revoluci%C3%B3n_L3_%282%29.jpg" alt="Plaza Revolución">
-                <h1 class="estacion_titulo">Plaza Revolución</h1>
-                <p class="estacion_descripcion">Dirección	Avenida Revolución, calle Ramón López Velarde
-                    Sector	Reforma
-                    Barrio	Lomas del Paradero
-                    Municipio	Guadalajara</p> 
-            </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Estaci%C3%B3n_CUCEI_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_CUCEI_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="CUCEI">
-                <h1 class="estacion_titulo">CUCEI</h1>
-                <p class="estacion_descripcion"> Dirección	Av. Revolución y calle Manuel de Mimbela
-                    Sector	Reforma
-                    Barrio	Colonia Olímpica
-                    Municipio	Guadalajara</p> 
-            </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/L3GDL07.jpg/300px-L3GDL07.jpg" alt="Plaza de la Bandera">
-                <h1 class="estacion_titulo">Plaza de la Bandera</h1>
-                <p class="estacion_descripcion">Dirección	Av. Revolución, entre Calzada del Ejército y calle Constancia
-                    Sector	Reforma
-                    Barrio	Colonia Obrera
-                    Municipio	Guadalajara</p> 
-            </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/L3GDL08.jpg/300px-L3GDL08.jpg" alt="Independencia">
-                <h1 class="estacion_titulo">Independencia</h1>
-                <p class="estacion_descripcion">Dirección	Calzada Independencia Sur, Avenida Revolución y Avenida Ramón Corona
-                    Sector	Juárez y Reforma
-                    Barrio	Analco
-                    Municipio	Guadalajara</p> 
-            </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/L3GDL09.jpg/300px-L3GDL09.jpg" alt="Guadalajara Centro">
-                <h1 class="estacion_titulo">Guadalajara Centro</h1>
-                <p class="estacion_descripcion">Dirección	Av. 16 de Septiembre y Av. Juárez
-                    Municipio	Guadalajara
-                    Zona	Centro Histórico</p> 
-            </div>
-        </li>
-        <li>
-            <div class="estacion">
-                <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/L3GDL10_20170122_1234.jpg/300px-L3GDL10_20170122_1234.jpg" alt="Santuario">
-                <h1 class="estacion_titulo">Santuario</h1>
-                <p class="estacion_descripcion">Dirección	Av. Fray Antonio Alcalde, calles Juan Álvarez y Manuel Acuña
-                    Sector	Hidalgo
-                    Barrio	Santuario, Centro Barranquitas
-                    Municipio	Guadalajara</p> 
-            </div>
-        </li>
-        <li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/L3GDL11_20170122_1218.jpg/300px-L3GDL11_20170122_1218.jpg" alt="La Normal CETRAM">
-            <h1 class="estacion_titulo">La Normal CETRAM</h1>
-            <p class="estacion_descripcion">Dirección	Av. de Los Maestros y Alcalde
-                Sector	Hidalgo
-                Barrio	La Normal, Miraflores
-                Municipio	Guadalajara</p> 
-        </div>
-        </li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Estaci%C3%B3n_%C3%81vila_Camacho_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/200px-Estaci%C3%B3n_%C3%81vila_Camacho_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Ávila Camacho">
-            <h1 class="estacion_titulo">Ávila Camacho</h1>
-            <p class="estacion_descripcion">Dirección	Federalismo y Ávila Camacho
-                Sector	Hidalgo
-                Barrio	San Miguel De Mezquitán
-                Municipio	Guadalajara</p> 
-        </div>
-        </li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Estaci%C3%B3n_Circunvalaci%C3%B3n_Country_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Circunvalaci%C3%B3n_Country_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Circunvalación Country">
-            <h1 class="estacion_titulo">Circunvalación Country</h1>
-            <p class="estacion_descripcion">Dirección	Ávila Camacho esq. Mar Egeo y calle A-1
-                Sector	Hidalgo
-                Barrio	Jardines del Country
-                Municipio	Guadalajara</p> 
-        </div>
-        </li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Estaci%C3%B3n_Plaza_Patria_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Plaza_Patria_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Plaza Patria">
-            <h1 class="estacion_titulo">Plaza Patria</h1>
-            <p class="estacion_descripcion">Dirección	Ávila Camacho y Patria Norte
-                Sector	Hidalgo
-                Barrio	Country Club
-                Municipio	Guadalajara
-                Zona	Límites municipales de Guadalajara y Zapopan</p> 
-        </div>
-        </li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Estaci%C3%B3n_Zapopan_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Zapopan_Centro_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Zapopan Centro">
-            <h1 class="estacion_titulo">Zapopan Centro</h1>
-            <p class="estacion_descripcion">Ubicación
-                Dirección	Av. Juan Pablo II de Zapopan y Avenida Hidalgo
-                Municipio	Zapopan
-                Zona	Centro Histórico de la ciudad conurbada de Zapopan, Jalisco</p> 
-        </div>
-        </li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Estaci%C3%B3n_Mercado_del_Mar_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Mercado_del_Mar_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Mercado del Mar">
-            <h1 class="estacion_titulo">Mercado del Mar</h1>
-            <p class="estacion_descripcion">Dirección	Av. Juan Pablo II de Zapopan al cruce por Cabecera Municipal López Cotilla y Av. José Parres Arias
-                Barrio	Colonia El Vigía
-                Municipio	Zapopan</p> 
-        </div>
-        </li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Estaci%C3%B3n_Perif%C3%A9rico_Belenes_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Perif%C3%A9rico_Belenes_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Periférico Belenes">
-            <h1 class="estacion_titulo">Periférico Belenes</h1>
-            <p class="estacion_descripcion">Dirección	Juan Pablo II y Periférico Norponiente
-                Barrio	Unidad FOVISSSTE, Belenes Norte
-                Municipio	Zapopan</p> 
-        </div>
-        </li>
-        <div class="estacion">
-            <img class="estacion_imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Estaci%C3%B3n_Arcos_de_Zapopan_L%C3%ADnea_3_GDL_%28Exterior%29.jpg/300px-Estaci%C3%B3n_Arcos_de_Zapopan_L%C3%ADnea_3_GDL_%28Exterior%29.jpg" alt="Arcos de Zapopan">
-            <h1 class="estacion_titulo">Arcos de Zapopan</h1>
-            <p class="estacion_descripcion">Dirección	Av. Juan Gil Preciado esq. Av. Arco del Triunfo
-                Barrio	Col. Arcos de Zapopan
-                Municipio	Zapopan</p> 
-        </div>
-        </li>
-    </ul>
+        </footer>
+        <!-- Footer -->
+    </main>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
