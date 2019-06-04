@@ -1,25 +1,153 @@
 body{
     color: $text-color-primary;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 56px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $text-color-primary;
 }
 
 ul{
-    position: relative;
-    padding-left: 2rem;
-    &::after{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 2rem;
-        content: "";
-        width: 5px;
-        height: 100%;
-        background: rgb(173, 171, 171);
-        z-index: -1;
-    }
+    padding-left: .25rem;
 }
 
 li{
+    display: block;
     list-style: none;
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    padding-left: 1.5rem;    
+}
+
+.navbar{
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+    & .nav-item.active::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: red;
+        display: block;
+    }
+}
+
+.navbar-toggler:focus,.navbar-toggler-icon{
+    outline: none;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    & img{
+        width: 25px;
+        margin-right: 10px;
+    }
+}
+
+
+#carousel{
+    position: relative;
+    & .carousel-inner img{
+        min-height: 30vh;
+        max-height: 55vh;
+        object-fit: cover;
+        filter: grayscale(70%);   
+    }
+    & .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        & .container, & .container .row{
+            height: 100%;
+        }
+    }
+}
+
+#contact{
+    min-height: 57vh;
+}
+
+#maps{
+    min-height: 27.5vh;
+}
+
+#hero{
+    position: relative;
+    height: 25vh;
+    border-bottom: 1px solid $color-secondary;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.35);
+    &.main{
+        height: 50vh;
+    }
+    & .row{
+        height: 100%;
+    }
+}
+
+.hero{
+    height: 100%;
+    &_title{
+        width: 100%;
+        height: auto;
+        margin-top: .5rem;
+        align-self: flex-start;
+    }
+    &_info{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }          
+    &_logo{
+        background: $color-primary;
+        border-radius: .25rem;
+        padding: .25rem;
+        width: auto;
+        display: inline-block;
+        color: $color-white;
+        align-self: flex-end;
+        &.l1{
+            background: $color-primary;
+        }
+        &.l2{
+            background: #48835D;
+        }
+        &.l3{
+            background: #51B5AD;
+        }
+    }
+    &::after{
+        content: "";
+        background: url("https://moovitapp.com/index/public-transit-resources/img/streets-pattern-dark.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 0.05;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    &.main{
+        &::after{
+            display: none;
+        }
+    }
 }
 
 .linea_titulo{
@@ -33,22 +161,48 @@ li{
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
 }
 
+.estaciones{
+    width: 100%;
+    &_title{
+        width: 100%;
+        color: white;
+        background: $color-primary;
+        text-align: center;
+        padding: 1rem;
+        border-radius: .25rem;
+    }
+    & ul li:first-child ::before{
+        height: 50%;
+        top: 50%;
+    }
+    & ul li:last-child ::before{
+        height: 50%;
+    }
+    & ul li:last-child .estacion{
+        border: none;
+    }
+}
+
+
 .estacion{
     display:grid;
-    grid-template-areas: "d a b"
-                         "d a c";
+    grid-template-areas: "a b"
+                         "a c";
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     justify-content: left;
     align-items: center;
+    box-sizing: border-box;
 
     padding: .5rem;
-    margin-bottom: .5rem;
     max-width: 750px;
+
+    border-bottom: 1px solid $estacion-color-secondary;
     &_imagen{
         grid-area: a;
-        max-width: 100px;
+        max-width: 80px;
         margin: 0 1rem;
+        border-radius: 10px;
     }
     &_titulo{
         grid-area: b;
@@ -63,12 +217,101 @@ li{
         margin: 0;
         color: $text-color-secondary;
     }
-    &::before{
-        grid-area: d;
+    &::after{ 
+        //Circulo junto a imagen de estacion
         content: "";
-        background: rgb(202, 19, 19);
+        position: absolute;
+        top: 40%;
+        left: 0rem;
+        background: white;
+        border: 2px solid $estacion-color-primary;
         width: 1rem;
         height: 1rem;
         border-radius: 50%;
+    }
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: .4rem;
+        width: .2rem;
+        height: 100%;
+        background: $estacion-color-primary;
+        z-index: -1;
+    }
+   
+}
+
+.info{
+    & .alert{
+        width: 100%;
+        background: none;
+        &-success{
+            color: $color-success;
+            border-color: $color-success ;
+        }
+        &-danger{
+            color: $color-primary;
+            border-color: $color-primary ;
+        }
+    }
+}
+
+.mapa{
+    &_title{
+        text-align: center;
+    }
+    &_img{
+        width: 100%;
+    }
+}
+
+.horario{
+    width: 100%;
+    background-color: $color-background;
+    padding: 1rem;
+    &_titulo{
+        text-align: center;
+    }
+    &_dia{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-secondary;
+        padding-bottom: .25rem;   
+    }
+}
+
+.card{
+    width: 100%;
+    min-height: 100%;
+    &-header{
+        background: $color-primary;
+        color: $color-white;
+    }
+    & .card-body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    & a{
+        align-self: flex-end;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        &:hover{
+            background: lighten($color-primary, 5%);
+            border-color: lighten($color-primary, 5%);
+        }
+    }
+}
+
+.carousel-item{
+    img{
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        // object-fit: cover;
     }
 }
